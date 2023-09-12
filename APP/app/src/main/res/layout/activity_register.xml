@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editintervention">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register User"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/blue_200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"></TextView>
+
+    <EditText
+        android:id="@+id/nom_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:hint="name"
+        android:layout_centerHorizontal="true"></EditText>
+    <EditText
+        android:id="@+id/prenom_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:hint="prenom"
+        android:layout_centerHorizontal="true"></EditText>
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:hint="email"
+        android:layout_centerHorizontal="true"></EditText>
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:hint="password"
+        android:layout_centerHorizontal="true"></EditText>
+    <EditText
+        android:id="@+id/numero_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:hint="numero"
+        android:layout_centerHorizontal="true"></EditText>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:backgroundTint="@color/blue_200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"></Button>
+
+
+</RelativeLayout>

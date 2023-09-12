@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/job2" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/nom_entreprise_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Nom de l'entreprise"
+            android:drawableStart="@drawable/ic_baseline_work_outline_24"
+            android:textColor="#F8000000"
+            android:textSize="18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardview" />
+
+        <TextView
+            android:id="@+id/nom_entreprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/nom_entreprise_label"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="Esprit"
+            android:textColor="#555555"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/poste_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/nom_entreprise"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="Poste"
+            android:drawableStart="@drawable/ic_baseline_note_alt_24"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/poste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/poste_label"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="poste"
+            android:layout_marginStart="20dp"
+            android:textColor="#555555"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/exigences_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/poste"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="Exigences"
+            android:drawableStart="@drawable/ic_baseline_computer_24"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/exigences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/exigences_label"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="exigences"
+            android:layout_marginStart="20dp"
+            android:textColor="#555555"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/exigences"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="contact"
+            android:drawableStart="@drawable/message"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/contact_label"
+            app:layout_constraintStart_toEndOf="@id/cardview"
+            android:text="contact"
+            android:textColor="#555555"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
